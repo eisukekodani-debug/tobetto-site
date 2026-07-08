@@ -12,6 +12,9 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://tobetto.jp/" />
 <meta property="og:image" content="https://tobetto.jp/img/ogp.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -31,38 +34,48 @@
   </div>
 </header>
 
+<main>
+
 <!-- ヒーロー -->
 <section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <p class="kicker">鳥取・大山町の育苗農家</p>
+  <div class="hero-text">
+    <p class="hero-kicker">鳥取・大山町の育苗農家</p>
+    <div class="hero-copy">
       <h1><span class="nw">確かな苗が、</span><span class="nw">良い実りをつくる</span></h1>
       <p class="subhead">プロ農家に向けて育てている、スイカやトマトの接ぎ木苗。作りすぎて余った分を、オンラインショップで直販しています。</p>
       <div class="btns">
-        <a class="btn btn-primary" href="https://tbtseedling.base.shop/" target="_blank" rel="noopener">オンラインショップを見る</a>
+        <a class="btn btn-primary" href="https://tbtseedling.base.shop/" target="_blank" rel="noopener">オンラインショップを見る<span class="arrow">→</span></a>
         <a class="btn btn-ghost" href="recruit.html">採用情報</a>
       </div>
     </div>
-    <div class="media hero-img">
-      <img src="img/hero.jpg" width="1600" height="1066" alt="セルトレイで育つトマトの接ぎ木苗" fetchpriority="high" />
-    </div>
+  </div>
+  <div class="hero-media">
+    <img src="img/hero.jpg" width="1600" height="1066" alt="セルトレイで育つトマトの接ぎ木苗" fetchpriority="high" />
   </div>
 </section>
 
-<hr class="divider" />
-
 <!-- 会社案内 -->
-<section class="about" id="about">
+<section class="sec sec--deep" id="about">
   <div class="wrap">
-    <p class="kicker">私たちについて</p>
-    <h2 class="section-title">農のバトンを、次代へつなぐ</h2>
-    <p class="lead">人が土に触れ、作物を育て、命をいただく。この地域で受け継がれてきた「農」の営みを、途切れさせずに次の世代へ手渡す。それが当別当育苗の役割です。先代から受け継いだ育苗の技術を、次の世代へつないでいきます。</p>
-
-    <div class="band">
-      <img src="img/about.jpg" width="1500" height="1000" alt="大山を望む、当別当育苗のある風景" loading="lazy" />
+    <div class="sechead reveal"><span class="num">01</span><span class="rule"></span></div>
+    <div class="split reveal">
+      <div class="split-l">
+        <p class="kicker">私たちについて</p>
+        <h2 class="stitle"><span class="nw">農のバトンを、</span><span class="nw">次代へつなぐ</span></h2>
+      </div>
+      <div class="split-r">
+        <p class="lead">人が土に触れ、作物を育て、命をいただく。この地域で受け継がれてきた「農」の営みを、途切れさせずに次の世代へ手渡す。それが当別当育苗の役割です。先代から受け継いだ育苗の技術を、次の世代へつないでいきます。</p>
+      </div>
     </div>
 
-    <div class="mvv">
+    <figure class="reveal" style="margin:0;">
+      <div class="band bleed">
+        <img src="img/about.jpg" width="1500" height="1000" alt="大山を望む、当別当育苗のある風景" loading="lazy" />
+      </div>
+      <figcaption class="band-cap">大山を望む、束積の圃場</figcaption>
+    </figure>
+
+    <div class="mvv reveal">
       <div class="item">
         <span class="label">MISSION</span>
         <h3>農のバトンを次代へつなぐ</h3>
@@ -75,51 +88,57 @@
       </div>
     </div>
 
-    <h3 class="subhead-title">会社概要</h3>
-    <table class="info-table">
-      <tbody>
-      <tr><th>会社名</th><td>当別当育苗</td></tr>
-      <tr><th>所在地</th><td>〒689-3105　鳥取県西伯郡大山町束積253-2</td></tr>
-      <tr><th>代表者</th><td>当別当 弘貴</td></tr>
-      <tr><th>設立</th><td>2001年（平成13年）</td></tr>
-      <tr><th>電話</th><td><a href="tel:0858-58-5005">0858-58-5005</a></td></tr>
-      <tr><th>事業内容</th><td>育苗事業（接ぎ木苗ほか）／農作物の生産・販売</td></tr>
-      </tbody>
-    </table>
-    <p class="map-link"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B3%A5%E5%8F%96%E7%9C%8C%E8%A5%BF%E4%BC%AF%E9%83%A1%E5%A4%A7%E5%B1%B1%E7%94%BA%E6%9D%9F%E7%A9%8D253-2" target="_blank" rel="noopener">Googleマップで見る →</a></p>
+    <div class="about-info reveal">
+      <h3 class="info-h">会社概要</h3>
+      <table class="info-table">
+        <caption class="sr-only">当別当育苗 会社概要</caption>
+        <tbody>
+        <tr><th scope="row">会社名</th><td>当別当育苗</td></tr>
+        <tr><th scope="row">所在地</th><td>〒689-3105　鳥取県西伯郡大山町束積253-2</td></tr>
+        <tr><th scope="row">代表者</th><td>当別当 弘貴</td></tr>
+        <tr><th scope="row">設立</th><td>2001年（平成13年）</td></tr>
+        <tr><th scope="row">電話</th><td><a href="tel:0858-58-5005">0858-58-5005</a></td></tr>
+        <tr><th scope="row">事業内容</th><td>育苗事業（接ぎ木苗ほか）／農作物の生産・販売</td></tr>
+        </tbody>
+      </table>
+      <p class="map-link"><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%B3%A5%E5%8F%96%E7%9C%8C%E8%A5%BF%E4%BC%AF%E9%83%A1%E5%A4%A7%E5%B1%B1%E7%94%BA%E6%9D%9F%E7%A9%8D253-2" target="_blank" rel="noopener">Googleマップで見る <span class="arrow">→</span></a></p>
+    </div>
   </div>
 </section>
 
 <!-- 商品 / オンラインショップ -->
-<section class="products" id="products">
+<section class="sec sec--paper" id="products">
   <div class="wrap">
-    <p class="kicker">オンラインショップ</p>
-    <h2 class="section-title">プロ向けの苗を、余った分だけ</h2>
-    <p class="lead">当別当育苗の苗は、プロの農家に向けて育てているものです。作りすぎて余った分を、捨てずにオンラインショップで直販しています。余剰分の販売のため、並ぶ品目や数量はその時々で変わります。</p>
+    <div class="sechead reveal"><span class="num">02</span><span class="rule"></span></div>
+    <div class="split reveal">
+      <div class="split-l">
+        <p class="kicker">オンラインショップ</p>
+        <h2 class="stitle"><span class="nw">プロ向けの苗を、</span><span class="nw">余った分だけ</span></h2>
+      </div>
+      <div class="split-r">
+        <p class="lead">当別当育苗の苗は、プロの農家に向けて育てているものです。作りすぎて余った分を、捨てずにオンラインショップで直販しています。余剰分の販売のため、並ぶ品目や数量はその時々で変わります。</p>
+      </div>
+    </div>
 
-    <div class="grid grid-2">
-      <article class="card">
-        <div class="media card-img">
+    <div class="products-grid">
+      <article class="pcard pcard--main reveal">
+        <div class="media">
           <img src="img/product-graft.jpg" width="1600" height="1066" alt="手に持ったトマトの接ぎ木苗とポット" loading="lazy" />
         </div>
-        <div class="body">
-          <h3>接ぎ木苗</h3>
-          <p class="desc">スイカ・トマトなどブランド品種の接ぎ木苗。家庭菜園では手に入りにくい、プロ農家向けの苗です。</p>
-          <p class="price">価格・在庫はオンラインショップでご確認ください</p>
-          <a class="card-link" href="https://tbtseedling.base.shop/" target="_blank" rel="noopener">オンラインショップで見る →</a>
-        </div>
+        <div class="cap"><span class="num">01</span><h3>接ぎ木苗</h3></div>
+        <p class="desc">スイカ・トマトなどブランド品種の接ぎ木苗。家庭菜園では手に入りにくい、プロ農家向けの苗です。</p>
+        <p class="price">価格・在庫はオンラインショップでご確認ください</p>
+        <a class="card-link" href="https://tbtseedling.base.shop/" target="_blank" rel="noopener">オンラインショップで見る <span class="arrow">→</span></a>
       </article>
 
-      <article class="card">
-        <div class="media card-img">
+      <article class="pcard pcard--sub reveal">
+        <div class="media">
           <img src="img/product-seedlings.jpg" width="1600" height="1066" alt="ハウスで育つ多品目の苗" loading="lazy" />
         </div>
-        <div class="body">
-          <h3>多品目の苗</h3>
-          <p class="desc">スイカ・キュウリ・メロン・ナスなど、多品目の野菜苗を育てています。パンジー・ビオラなどの花苗は、秋から冬にお届けします。</p>
-          <p class="price">価格・在庫はオンラインショップでご確認ください</p>
-          <a class="card-link" href="https://tbtseedling.base.shop/" target="_blank" rel="noopener">オンラインショップで見る →</a>
-        </div>
+        <div class="cap"><span class="num">02</span><h3>多品目の苗</h3></div>
+        <p class="desc">スイカ・キュウリ・メロン・ナスなど、多品目の野菜苗を育てています。パンジー・ビオラなどの花苗は、秋から冬にお届けします。</p>
+        <p class="price">価格・在庫はオンラインショップでご確認ください</p>
+        <a class="card-link" href="https://tbtseedling.base.shop/" target="_blank" rel="noopener">オンラインショップで見る <span class="arrow">→</span></a>
       </article>
     </div>
     <p class="note">実際の販売はオンラインショップ（BASE）で行います。クレジットカード等の決済情報は、当サイトでは一切扱いません。</p>
@@ -127,34 +146,54 @@
 </section>
 
 <!-- 採用ティーザー -->
-<section class="recruit-teaser">
-  <div class="wrap">
+<section class="teaser">
+  <img class="teaser-bg" src="img/recruit.jpg" width="1600" height="1066" alt="" loading="lazy" />
+  <div class="teaser-inner reveal">
     <h2><span class="nw">良い苗は、</span><span class="nw">良いチームから</span></h2>
     <p>需要に供給が追いつかない、成長のただ中にあります。この地の「農」を一緒に支える仲間を探しています。</p>
-    <a class="btn btn-primary" href="recruit.html">採用情報を見る</a>
+    <a class="btn btn-ghost-light" href="recruit.html">採用情報を見る<span class="arrow">→</span></a>
   </div>
 </section>
+
+</main>
 
 <!-- フッター -->
 <footer class="site-footer">
   <div class="wrap">
     <div class="cols">
       <div>
-        <div class="name">当別当育苗</div>
+        <p class="fname">当別当育苗</p>
         <p>〒689-3105　鳥取県西伯郡大山町束積253-2<br>
         電話 <a href="tel:0858-58-5005">0858-58-5005</a><br>
         育苗事業／農作物生産販売事業</p>
       </div>
-      <div>
-        <p><a href="#about">会社案内</a><br>
-        <a href="#products">商品</a><br>
-        <a href="recruit.html">採用</a><br>
-        <a href="https://tbtseedling.base.shop/" target="_blank" rel="noopener">オンラインショップ（BASE）</a></p>
+      <div class="fnav">
+        <a href="#about">会社案内</a>
+        <a href="#products">商品</a>
+        <a href="recruit.html">採用</a>
+      </div>
+      <div class="fnav">
+        <a href="https://tbtseedling.base.shop/" target="_blank" rel="noopener">オンラインショップ（BASE）</a>
       </div>
     </div>
-    <p class="small">© 2026 当別当育苗</p>
+    <p class="copy">© 2026 当別当育苗</p>
   </div>
 </footer>
+
+<script>
+document.documentElement.classList.add('js');
+var reveals = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0, rootMargin: '0px 0px -12% 0px' });
+  reveals.forEach(function (el) { io.observe(el); });
+} else {
+  reveals.forEach(function (el) { el.classList.add('is-in'); });
+}
+</script>
 
 </body>
 </html>
