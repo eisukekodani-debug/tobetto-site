@@ -1,0 +1,46 @@
+# 当別当育苗 robots.txt
+# Public site: https://tobetto.jp/
+
+User-agent: *
+Allow: /
+
+# AI検索bot: 引用・インデックスを明示的に許可
+# （育苗・農業の専門情報が生成AIエンジンに引用されることを歓迎する）
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://tobetto.jp/sitemap.xml
