@@ -72,7 +72,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.css?v=20261127" />
 <!-- ===== TBT Analytics START =====
   GA4 (G-S450J6KXNJ) + Consent Mode v2 (default denied) + Cookie告知バナー(日本語) + CVトラッカー
 -->
@@ -161,10 +161,10 @@ document.addEventListener('DOMContentLoaded', function(){
   <div class="hero-text">
     <p class="hero-kicker">採用情報</p>
     <div class="hero-copy">
-      <h1><span class="nw">良い苗は、</span><span class="nw">良いチームから</span></h1>
-      <p class="subhead">プロ農家に使っていただく接ぎ木苗を、一緒に育てる仲間を探しています。経験は問いません。</p>
+      <h1 class="h1-job"><span class="nw">良い苗は、</span><span class="nw">良いチームから</span></h1>
+      <p class="subhead">プロ農家に使っていただく接ぎ木苗を、一緒に育てる仲間を探しています。正社員、パート・アルバイト、冬季限定アルバイトを募集中です。経験は問いません。</p>
       <div class="btns">
-        <a class="btn btn-primary" href="#requirements">募集要項を見る<span class="arrow">→</span></a>
+        <a class="btn btn-primary" href="#jobs">募集中の仕事を見る<span class="arrow">↓</span></a>
         <a class="btn btn-ghost" href="index.html#about">会社案内</a>
       </div>
     </div>
@@ -173,6 +173,40 @@ document.addEventListener('DOMContentLoaded', function(){
     <img src="img/recruit.jpg" width="1600" height="1066" alt="ハウスで防除作業をするスタッフ" fetchpriority="high" />
   </div>
 </section>
+
+<!-- JOBS START（build_part_pages.py が生成。手で直さない） -->
+<section class="sec-jobs" id="jobs">
+  <div class="wrap">
+    <p class="kicker">募集中の仕事</p>
+    <h2 class="stitle"><span class="nw">3つの働き方から</span><span class="nw">選べます</span></h2>
+    <p class="lead">正社員、パート・アルバイト、冬季限定アルバイトを募集しています。どれも未経験から始められます。気になる働き方を選んで、くわしい条件をご覧ください。</p>
+    <div class="jobs">
+      <a class="job is-current" href="/recruit.html#requirements" aria-current="page">
+        <span class="job-badge">表示中</span>
+        <span class="job-tag">通年・フルタイム</span>
+        <h3 class="job-title">正社員</h3>
+        <p class="job-sub">野菜苗・花苗の育苗スタッフ</p>
+        <dl class="job-facts"><div><dt>給与</dt><dd>月給215,200円〜<br>（試用期間6か月は200,000円）</dd></div><div><dt>時間</dt><dd>8:00〜17:30（実働8時間）</dd></div><div><dt>休日</dt><dd>年間96日</dd></div><div><dt>待遇</dt><dd>社会保険完備・賞与年2回</dd></div></dl>
+        <span class="job-go">正社員の募集要項<span class="arrow">↓</span></span>
+      </a>
+      <a class="job" href="/parttime/#requirements">
+        <span class="job-tag">通年・短時間OK</span>
+        <h3 class="job-title">パート・アルバイト</h3>
+        <p class="job-sub">苗づくりの作業スタッフ</p>
+        <dl class="job-facts"><div><dt>給与</dt><dd>時給1,200円〜<br>（試用期間6か月は1,100円）</dd></div><div><dt>時間</dt><dd>1日3時間・週3日から</dd></div><div><dt>休日</dt><dd>希望を優先</dd></div><div><dt>待遇</dt><dd>扶養内OK・残業なし</dd></div></dl>
+        <span class="job-go">パート・アルバイトの募集要項<span class="arrow">→</span></span>
+      </a>
+      <a class="job" href="/fuyu/#winter">
+        <span class="job-tag">2027年1月〜4月末</span>
+        <h3 class="job-title">冬季限定アルバイト</h3>
+        <p class="job-sub">冬のあいだだけの短期のお仕事</p>
+        <dl class="job-facts"><div><dt>給与</dt><dd>時給1,200円</dd></div><div><dt>時間</dt><dd>1日3時間・週3日から</dd></div><div><dt>期間</dt><dd>最長4か月</dd></div><div><dt>仕事</dt><dd>種まき・接ぎ木・鉢上げ</dd></div></dl>
+        <span class="job-go">冬季限定アルバイトの募集要項<span class="arrow">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- JOBS END -->
 
 <!-- なぜ仲間を募るのか -->
 <section class="sec sec--deep">
@@ -230,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <div class="split reveal">
       <div class="split-l">
         <p class="kicker">募集要項</p>
-        <h2 class="stitle">募集の概要</h2>
+        <h2 class="stitle">正社員</h2>
       </div>
       <div class="split-r">
         <p class="lead">未経験からプロの苗づくりを覚えていける仕事です。まずは職場見学だけでも受け付けています。</p>
@@ -253,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function(){
       </tbody>
     </table>
     <div class="apply-tel reveal"><a href="tel:0858-58-5005">0858-58-5005</a></div>
-    <p class="note reveal">パート・アルバイト（1日3時間・週3日から）と、冬季限定アルバイトも募集しています。くわしくは<a href="/part/">パート・アルバイト募集</a>のページをご覧ください。</p>
+    <p class="note reveal">パート・アルバイト（1日3時間・週3日から）と、冬季限定アルバイトも募集しています。くわしくは<a href="/parttime/">パート・アルバイト募集</a>のページをご覧ください。</p>
   </div>
 </section>
 
